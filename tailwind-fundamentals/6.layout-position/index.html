@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS course - Layout Position</title>
+  </head>
+  <body>   
+
+    <!-- Positioning-->
+    <div class="relative w-1/2 h-12 bg-red-400">
+        <p>Relative Parent</p>
+        <div class="absolute right-0 top-0 bg-green-300">
+            <p>Abosolute Child</p>
+        </div>
+    </div>
+    <!-- Positioning-->
+
+    <!-- Span Top Edge-->
+    <div class="relative h-32 w-32 bg-yellow-300 mt-4">
+        <div class="absolute h-16 top-0 inset-x-0 bg-green-300">Span Top Edge</div>
+    </div>
+    <!-- Span Top Edge-->
+
+    <!-- Span bottom Edge-->
+    <div class="relative h-32 w-32 bg-yellow-300 mt-4">
+        <div class="absolute h-16 bottom-0 inset-x-0 bg-green-300">Span bottom Edge</div>
+    </div>
+    <!-- Span bottom Edge-->
+
+    <!-- Span left Edge-->
+    <div class="relative h-32 w-32 bg-yellow-300 mt-4">
+        <div class="absolute w-16 left-0 inset-y-0 bg-green-300">Span left Edge</div>
+    </div>
+    <!-- Span left Edge-->
+
+    <!-- Span right Edge-->
+    <div class="relative h-32 w-32 bg-yellow-300 mt-4">
+        <div class="absolute w-16 right-0 inset-y-0 bg-green-300">Span right Edge</div>
+    </div>
+    <!-- Span right Edge-->
+
+
+    <!-- Display Classes-->
+    <div class="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda culpa fugiat et deleniti ex, harum quam minima beatae error aliquid dignissimos. Sunt saepe voluptates quibusdam rerum aperiam quo velit reprehenderit!
+        <span class="inline text-red-500 bg-blue-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quam?</span>
+        <span class="inline-block text-red-500 bg-blue-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quam?azdfasdasd</span>
+        <span class="block text-red-500 bg-blue-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quam?</span>
+        <span class="hidden text-red-500 bg-blue-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quam?</span>
+
+
+        <!--Z-index-->
+
+        <div class="relative h-36 mt-10">
+            <div class="absolute left-10 w-24 h-24 bg-blue-200 z-40">1</div>
+            <div class="absolute left-20 w-24 h-24 bg-blue-300">2</div>
+            <div class="absolute left-40 w-24 h-24 bg-blue-400 z-10">3</div>
+            <div class="absolute left-60 w-24 h-24 bg-blue-500 z-20">4</div>
+            <div class="absolute left-80 w-24 h-24 bg-blue-600">5</div>
+        </div>
+        <!--Z-index-->
+
+
+        <!--Floats-->
+        <div class="w-1/2 mx-auto">
+            <img src="../1.utility-approach/1.jpg" alt="" class="h-48 w-48 float-left">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci totam dolorum, provident eaque ipsum alias perferendis ad eius minima excepturi qui, odio molestiae accusantium soluta, enim obcaecati voluptatem voluptate? Optio.
+            </p>
+        </div>
+        <!--Floats-->
+
+    </div>
+  
+</body>
+</html>
