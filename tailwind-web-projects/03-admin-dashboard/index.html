@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+      integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body class="bg-gray-200">
+    <div class="flex">
+      <!--SideBar-->
+      <div class="bg-blue-500 w-72">
+        <div class="bg-rose-400">
+          <h1 class="uppercase text-gray-200 text-2xl p-5 font-bold">
+            Admin Board
+          </h1>
+        </div>
+
+        <div class="">
+          <h1 class="p-5 text-gray-200 uppercase font-bold text-lg">Pages</h1>
+        </div>
+
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/dashboard.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Dashboard</h2>
+          </a>
+        </div>
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/customers.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Customers</h2>
+          </a>
+        </div>
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/orders.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Orders</h2>
+          </a>
+        </div>
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/campaign.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Campaigns</h2>
+          </a>
+        </div>
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/messages.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Messages</h2>
+          </a>
+        </div>
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/apps.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Apps</h2>
+          </a>
+        </div>
+        <div class="flex px-5 py-2 mt-2">
+          <div class="">
+            <img src="./assets/settings.png" alt="" class="w-5 h-5" />
+          </div>
+          <a href="#">
+            <h2 class="mx-3 text-lg text-gray-100">Settings</h2>
+          </a>
+        </div>
+      </div>
+      <!--SideBar-->
+
+      <!-- Main Content Area-->
+      <div class="flex-1">
+        <div class="">
+          <!--Top Navbar-->
+          <div class="bg-white px-2 py-0.5 h-18 flex">
+            <div class="left flex p-3 md:w-3/4 sm:w-1/3">
+              <img src="./assets/person.png" alt="" class="w-10 h-10" />
+              <span class="block p-2">M Ibrahim</span>
+            </div>
+
+            <div class="right flex p-3 md:w-1/4 sm:w-2/3">
+              <img
+                src="./assets/search.png"
+                alt=""
+                class="w-8 h-8 bg-gray-100 rounded-full p-1 mx-2 my-4"
+              />
+              <img
+                src="./assets/message.png"
+                alt=""
+                class="w-8 h-8 bg-gray-100 rounded-full p-1 mx-2 my-4"
+              />
+              <img
+                src="./assets/warning.png"
+                alt=""
+                class="w-8 h-8 bg-gray-100 rounded-full p-1 mx-2 my-4"
+              />
+              <a
+                href="#"
+                class="mt-4 mx-2 bg-blue-500 py-2 px-4 text-gray-200 rounded font-bold"
+                >Logout</a
+              >
+            </div>
+          </div>
+          <!--Top Navbar-->
+
+          <!--Site Banner-->
+          <div class="bg-rose-400 m-7 p-6 rounded">
+            <h1 class="text-4xl text-gray-200 font-medium">
+              Good Morning, Admin
+            </h1>
+            <p class="text-gray-200 text-base">
+              These are the stats for today, have a good day.
+            </p>
+          </div>
+          <!--Site Banner-->
+
+          <!--Card Container-->
+          <div class="card-container flex m-7 space-x-6">
+            <div class="card bg-white p-4 w-1/2 rounded">
+              <div class="">
+                <img src="./assets/wallet.png" class="w-10 h-10" alt="" />
+              </div>
+
+              <h1 class="text-gray-700 text-xl font-bold">Honey</h1>
+              <p class="text-gray-500 my-3 text-base uppercase font-bold">
+                Sales
+              </p>
+              <span class="text-gray-700 text-3xl font-bold">$24,780</span>
+              <span
+                class="rounded-full text-white texm-sm font-bold bg-green-500 p-1 align-text-top"
+                >+49%</span
+              >
+
+              <div>
+                <canvas id="card1" width="200" height="200"></canvas>
+              </div>
+            </div>
+            <div class="card bg-white p-4 w-1/2 rounded">
+              <div class="">
+                <img src="./assets/wallet.png" class="w-10 h-10" alt="" />
+              </div>
+
+              <h1 class="text-gray-700 text-xl font-bold">Sia Seed</h1>
+              <p class="text-gray-500 my-3 text-base uppercase font-bold">
+                Sales
+              </p>
+              <span class="text-gray-700 text-3xl font-bold">$2,780</span>
+              <span
+                class="rounded-full text-white texm-sm font-bold bg-red-500 p-1 align-text-top"
+                >-9%</span
+              >
+              <div>
+                <canvas id="card2" width="200" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+          <!--Card Container-->
+
+          <!--Card Container-->
+          <div class="card-container flex m-7 space-x-6">
+            <div class="card bg-white p-4 w-1/2 rounded">
+              <div class="">
+                <img src="./assets/wallet.png" class="w-10 h-10" alt="" />
+              </div>
+
+              <h1 class="text-gray-700 text-xl font-bold">Honey</h1>
+              <p class="text-gray-500 my-3 text-base uppercase font-bold">
+                Sales
+              </p>
+              <span class="text-gray-700 text-3xl font-bold">$24,780</span>
+              <span
+                class="rounded-full text-white texm-sm font-bold bg-green-500 p-1 align-text-top"
+                >+49%</span
+              >
+
+              <div>
+                <canvas id="card3" width="200" height="200"></canvas>
+              </div>
+            </div>
+            <div class="card bg-white p-4 w-1/2 rounded">
+              <div class="">
+                <img src="./assets/wallet.png" class="w-10 h-10" alt="" />
+              </div>
+
+              <h1 class="text-gray-700 text-xl font-bold">Sia Seed</h1>
+              <p class="text-gray-500 my-3 text-base uppercase font-bold">
+                Sales
+              </p>
+              <span class="text-gray-700 text-3xl font-bold">$2,780</span>
+              <span
+                class="rounded-full text-white texm-sm font-bold bg-red-500 p-1 align-text-top"
+                >-9%</span
+              >
+              <div>
+                <canvas id="card4" width="200" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+          <!--Card Container-->
+
+
+          <div class="card-container flex m-7 space-x-6">
+            <div class="bg-white w-1/3 p-4 divide-y divide-gray-200">
+                <h1 class="text-lg text-gray-800 font-bold">Sales Percentage</h1>
+                <div>
+                    <canvas id="card5" width="200" height="200"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white w-2/3 p-4">
+                <h1 class="text-lg text-gray-800 font-bold">Top Sales Channels</h1>
+                <table class="text-sm w-full text-gray-500">
+                    <thead class="text-xs rounded text-gray-700 uppercase bg-gray-200">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">Source</th>
+                            <th scope="col" class="px-6 py-3">Visitors</th>
+                            <th scope="col" class="px-6 py-3">Revenues</th>
+                            <th scope="col" class="px-6 py-3">Sales</th>
+                            <th scope="col" class="px-6 py-3">Conversion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 flex">
+                                <img src="./assets/youtube.png" alt="" class="w-10 h-10">
+                                <p class="text-lg font-semibold p-2">Youtube</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">2.4K</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-green-300 font-semibold p-2">$15,000</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">350</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-blue-300 font-semibold p-2">5.8%</p>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 flex">
+                                <img src="./assets/facebook.png" alt="" class="w-10 h-10">
+                                <p class="text-lg font-semibold p-2">Facebook</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">2.4K</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-green-300 font-semibold p-2">$15,000</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">350</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-blue-300 font-semibold p-2">5.8%</p>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 flex">
+                                <img src="./assets/github.png" alt="" class="w-10 h-10">
+                                <p class="text-lg font-semibold p-2">Github</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">2.4K</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-green-300 font-semibold p-2">$15,000</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">350</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-blue-300 font-semibold p-2">5.8%</p>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 flex">
+                                <img src="./assets/instagram.png" alt="" class="w-10 h-10">
+                                <p class="text-lg font-semibold p-2">Instagram</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">2.4K</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-green-300 font-semibold p-2">$15,000</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">350</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-blue-300 font-semibold p-2">5.8%</p>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 flex">
+                                <img src="./assets/youtube.png" alt="" class="w-10 h-10">
+                                <p class="text-lg font-semibold p-2">Youtube</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">2.4K</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-green-300 font-semibold p-2">$15,000</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg font-semibold p-2">350</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <p class="text-lg text-blue-300 font-semibold p-2">5.8%</p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- Main Content Area-->
+    </div>
+
+    <script>
+      const ctx = document.getElementById("card1").getContext("2d");
+      const card1 = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "# of sales",
+              data: [2, 9, 13, 15, 20, 30],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      const ctx2 = document.getElementById("card2").getContext("2d");
+      const card2 = new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "# of sales",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      const ctx3 = document.getElementById("card3").getContext("2d");
+      const card3 = new Chart(ctx3, {
+        type: "pie",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "# of sales",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      const ctx4 = document.getElementById("card4").getContext("2d");
+      const card4 = new Chart(ctx4, {
+        type: "radar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "# of sales",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+
+      const ctx5 = document.getElementById("card5").getContext("2d");
+      const card5 = new Chart(ctx5, {
+        type: "doughnut",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          datasets: [
+            {
+              label: "# of sales",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+    </script>
+  </body>
+</html>
