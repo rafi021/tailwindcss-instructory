@@ -3,17 +3,8 @@
 @tailwind utilities;
 
 
-@layer base{
-    h1{
-        @apply text-3xl text-green-600
+@layer components {
+    .menu-button{
+        @apply px-4 py-2 rounded-lg text-white font-bold;
     }
-    h2{
-        @apply text-xl text-gray-600
-    }
-
-    a{
-        @apply px-8 py-4 rounded text-white bg-gray-600 no-underline
-    }
-
-
 }
